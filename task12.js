@@ -1,5 +1,5 @@
 // 1
-
+/*
 const randomEl = [1,2,3,6,'23','efwef','wfefw',true];
 
 const numsFunc = (nums) => {
@@ -14,7 +14,7 @@ const numsFunc = (nums) => {
     return sum / arrOfNums.length;
 }
 console.log("Середнє арифметичне = "+numsFunc(randomEl));
-
+*/
 
 //2
 /*
@@ -52,16 +52,18 @@ alert(doMath(a, sign, b))
 
 
 // 3
-/*
-const array = [];
-for(let i = 0; i < 3; i++){
-  array[i] = [];
-  for(let j = 0; j < 3; j++){
-    array[i][j] = prompt("array ["+(i+1)+","+(j+1)+"] = ?");
-  };
+
+let array = [];
+let myFunc = (column,term) => {
+    for(let i = 0; i < column; i++) {
+    array[i] = [];
+    for(let j = 0; j < term; j++) {
+        array[i][j] = prompt("array ["+(i+1)+","+(j+1)+"] = ?");
+    };
+    };
 };
+myFunc(4,2);
 console.log(array);
-*/
 
 
 
